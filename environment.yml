@@ -1,0 +1,31 @@
+name: hedging_clean
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - numpy
+  - pandas
+  - scipy
+  - scikit-learn
+  - pytest
+  - openpyxl
+  - pyarrow
+  - tqdm
+  - ipykernel
+  - matplotlib
+  - plotly
+  - beautifulsoup4
+  - requests
+  - numba             # Critical: Install via conda to get LLVM binaries
+  - pip
+  - pip:
+    - sentence-transformers  # These are safe to install via pip
+    - umap-learn             # Safe via pip IF numba is already in conda
+    - hdbscan
+    - yfinance
+    - cvxpy
+    - joblib
+    - seaborn
+    - einops
+    - -e .                   # Editable install of the local package

@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "adv_hedging"
+version = "0.1.0"
+description = "Advanced Portfolio Hedging for Tax-Efficient Risk Management"
+requires-python = ">=3.10"
+dependencies = [
+    "pandas>=2.0.0",
+    "numpy<2.0.0",          # Numba (used by UMAP) often conflicts with numpy 2.0+
+    "scikit-learn",
+    "sentence-transformers>=2.7.0",
+    "umap-learn",
+    "hdbscan",
+    "yfinance",
+    "beautifulsoup4",       # Required for cleaning.py
+    "requests",
+    "matplotlib",
+    "plotly",
+    "nbformat",              # Often needed for notebook execution
+    "seaborn",
+    "einops"                # Required for Nomic embeddings
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
