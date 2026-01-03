@@ -92,7 +92,7 @@ cd advanced-portfolio-hedging
     - Technique: UMAP dimensionality reduction + HDBScan density clustering.
     - Insight: The model identified "Hybrid" clusters (e.g., Cloud Hyperscalers like AMZN/GOOGL) that act as both Makers and Users, defying binary classification.
 
-📊 Usage
+## 📊 Usage
 To reproduce the full analysis, run the notebooks in order:
 
 1. `00_exploratory_data_analysis.ipynb`: Verifies data integrity.
