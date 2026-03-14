@@ -43,7 +43,7 @@ This project uses a custom Conda environment (hedging_clean) with Python 3.10.
 1. Clone the Repository:
 
     ```bash
-    git clone [https://github.com/your-username/advanced-portfolio-hedging.git](https://github.com/your-username/advanced-portfolio-hedging.git)
+    git clone [https://github.com/aengusmartindonaire/advanced-portfolio-hedging.git](https://github.com/aengusmartindonaire/advanced-portfolio-hedging.git)
 cd advanced-portfolio-hedging
     ```
 
